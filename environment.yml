@@ -1,0 +1,7 @@
+name: myenv
+channels:
+  - https://repo.anaconda.cloud/repo/main
+  - https://repo.anaconda.cloud/repo/community
+  - https://repo.anaconda.cloud/repo/conda-forge
+  - https://repo.anaconda.cloud/repo/rko-demo/pytorch
+prefix: /Users/smonroe/miniconda3/envs/myenv

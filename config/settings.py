@@ -25,7 +25,7 @@ class LocalSettings:
     CACHE_DIR: str = "data/research_cache"
     OUTPUT_DIR: str = "outputs/reports"
     GRADIO_SERVER_NAME: str = "127.0.0.1"
-    GRADIO_SERVER_PORT: int = 7860
+    GRADIO_SERVER_PORT: int = 7862
     GRADIO_SHARE: bool = False
     ANONYMIZE_QUERIES_IN_LOGS: bool = True
     ENABLE_TELEMETRY: bool = False

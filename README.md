@@ -60,7 +60,7 @@ A privacy-focused research assistant powered by Meta-Llama-3-8B-Instruct running
 ## Requirements
 
 ### Software Requirements
-- **Python**: 3.8 or higher
+- **Python**: 3.11 or higher
 - **Anaconda AI Navigator**: With Meta-Llama-3-8B-Instruct model loaded
 - **Operating System**: macOS, Linux, or Windows
 
@@ -88,16 +88,16 @@ cd research_agent
 conda env create -f environment.yml
 
 # Activate environment
-conda activate research_agent_local
+conda activate anaconda-ai-agent
 ```
 
 ### 3. Install Additional Dependencies
 ```bash
-# Core packages
-pip install arxiv wikipedia-api aiohttp beautifulsoup4 flask requests
+# Core packages - from Anaconda Secure Governance
+conda install arxiv wikipedia-api aiohttp beautifulsoup4 flask requests
 
 # Jupyter support (optional)
-pip install jupyter ipywidgets
+conda install jupyter ipywidgets
 ```
 
 ### 4. Set Up Anaconda AI Navigator
@@ -378,7 +378,7 @@ python -c "import arxiv; print('arXiv OK')"
 python -c "import wikipedia; print('Wikipedia OK')"
 
 # Install missing packages
-pip install arxiv wikipedia-api
+conda install arxiv wikipedia-api
 ```
 
 #### Memory Issues
@@ -439,8 +439,8 @@ export RESEARCH_DEBUG=1
 ### Development Setup
 ```bash
 # Install development dependencies
-pip install -e .
-pip install pytest black flake8
+conda install -e .
+conda install pytest black flake8
 
 # Run tests
 python -m pytest tests/
@@ -481,9 +481,6 @@ black src/ tests/
 - Model runs in isolated local environment
 - No model data transmitted over network
 
-## License
-
-This project is licensed under the MIT License. See LICENSE file for details.
 
 ## Acknowledgments
 

@@ -78,14 +78,14 @@ A privacy-focused research assistant powered by Meta-Llama-3-8B-Instruct running
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/saundramonroe/research_agent.git)
 cd research_agent
 ```
 
 ### 2. Set Up Anaconda Environment
 ```bash
 # Create conda environment
-conda env create -f environment.yml
+conda env create -f environment-ai-agent.yml
 
 # Activate environment
 conda activate anaconda-ai-agent
@@ -95,6 +95,7 @@ conda activate anaconda-ai-agent
 ```bash
 # Core packages - from Anaconda Secure Governance
 conda install arxiv wikipedia-api aiohttp beautifulsoup4 flask requests
+conda install pytorch
 
 # Jupyter support (optional)
 conda install jupyter ipywidgets

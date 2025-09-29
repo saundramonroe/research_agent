@@ -35,7 +35,7 @@ class LocalSearchTool:
             print("✅ arXiv academic search available")
         except ImportError:
             self.engines['arxiv'] = False
-            print("⚠️  arXiv not available - install with: pip install arxiv")
+            print("⚠️  arXiv not available - install with: conda install arxiv")
         
         try:
             import wikipedia
@@ -43,7 +43,7 @@ class LocalSearchTool:
             print("✅ Wikipedia search available")
         except ImportError:
             self.engines['wikipedia'] = False
-            print("⚠️  Wikipedia not available - install with: pip install wikipedia-api")
+            print("⚠️  Wikipedia not available - install with: conda install wikipedia-api")
     
     async def search(self, query: str, max_results: int = 10) -> List[Source]:
         print(f"🔍 Searching for: {query}")
@@ -221,7 +221,7 @@ class LocalSearchTool:
             print("✅ arXiv academic search available")
         except ImportError:
             self.engines['arxiv'] = False
-            print("⚠️  arXiv not available - install with: pip install arxiv")
+            print("⚠️  arXiv not available - install with: conda install arxiv")
         
         try:
             import wikipedia
@@ -229,7 +229,7 @@ class LocalSearchTool:
             print("✅ Wikipedia search available")
         except ImportError:
             self.engines['wikipedia'] = False
-            print("⚠️  Wikipedia not available - install with: pip install wikipedia-api")
+            print("⚠️  Wikipedia not available - install with: conda install wikipedia-api")
     
     async def search(self, query: str, max_results: int = 10) -> List[Source]:
         print(f"🔍 Searching for: {query}")
